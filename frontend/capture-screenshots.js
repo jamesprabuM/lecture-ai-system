@@ -44,6 +44,14 @@ async function wait(ms) {
     fullPage: true,
   });
 
+  // Wait for generated output panels to appear and capture a sample output view.
+  await page.waitForSelector('text=Summary', { timeout: 180000 });
+  await wait(1000);
+  await page.screenshot({
+    path: path.join(outputDir, '04-sample-output.png'),
+    fullPage: true,
+  });
+
   await browser.close();
   console.log('Screenshots captured in:', outputDir);
 })().catch((error) => {
