@@ -135,12 +135,6 @@ After clicking Process Lecture, the application enters inference mode and begins
 
 ![Processing State](screenshots/03-processing.png)
 
-### 4. Output Preview
-
-This screen shows processed lecture content rendered in the result cards, including generated transcript and downstream output panels.
-
-![Output Preview](screenshots/04-sample-output.png)
-
 ### `POST /ask`
 
 Asks a question against previously processed lecture context.
