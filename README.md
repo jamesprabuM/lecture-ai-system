@@ -113,26 +113,6 @@ Error response example:
 }
 ```
 
-### `POST /ask`
-
-Asks a question against previously processed lecture context.
-
-Request body:
-
-```json
-{
-  "question": "What are the main types of machine learning?"
-}
-```
-
-Success response example:
-
-```json
-{
-  "answer": "The lecture covers supervised, unsupervised, and reinforcement learning."
-}
-```
-
 ## Screenshots
 
 The following screenshots show the live UI flow from upload to inference trigger.
@@ -154,6 +134,26 @@ This state confirms the selected lecture file and keeps the processing controls 
 After clicking Process Lecture, the application enters inference mode and begins backend processing (STT, summarization, translation, and retrieval preparation).
 
 ![Processing State](screenshots/03-processing.png)
+
+### `POST /ask`
+
+Asks a question against previously processed lecture context.
+
+Request body:
+
+```json
+{
+  "question": "What are the main types of machine learning?"
+}
+```
+
+Success response example:
+
+```json
+{
+  "answer": "The lecture covers supervised, unsupervised, and reinforcement learning."
+}
+```
 
 ## How It Works
 
