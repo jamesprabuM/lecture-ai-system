@@ -1,0 +1,10 @@
+Research/Academic Brand Variant
+4K photorealistic hero background for an academic AI lecture research tool. Refined workspace with laptop, open research notebook, fountain pen, printed charts out of focus (not readable), and subtle audio waveform elements. Soft natural sunlight through window blinds creating gentle light streaks, intellectually calm and trustworthy tone, modern academic aesthetic. Balanced composition with negative space for headline, shallow depth of field, high-end editorial commercial photography, realistic color science, warm neutrals with muted green-blue accents, no people, no logos, no watermark.
+
+Recommended output file for this project:
+Save generated image as: /frontend/public/hero-academic-4k.jpg
+
+Notes:
+- Keep subject weighted to the right side.
+- Preserve negative space on the left side for hero heading and CTA.
+- Use 16:9 framing (3840x2160 preferred).

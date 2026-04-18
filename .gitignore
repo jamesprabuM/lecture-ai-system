@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+backend/venv/
+backend/.venv/
+
+# Environment files
+.env
+.env.*
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Frontend dependencies/build
+frontend/node_modules/
+frontend/build/
+
+# Backend runtime/generated artifacts
+backend/uploads/
+uploads/
+*.log
+faiss_index.bin
+chunks.txt
+backend/faiss_index.bin
+backend/chunks.txt
+
+# Large local datasets/audio
+audio/
