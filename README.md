@@ -133,15 +133,6 @@ Success response example:
 }
 ```
 
-## How It Works
-
-1. User uploads lecture audio.
-2. Whisper transcribes speech to text.
-3. BART summarizes transcript chunks.
-4. Summary is translated to selected target language.
-5. Transcript is chunked, embedded, and indexed in FAISS.
-6. Q&A retrieves top chunks and generates an answer using FLAN-T5.
-
 ## Screenshots
 
 The following screenshots show the live UI flow from upload to inference trigger.
@@ -163,6 +154,15 @@ This state confirms the selected lecture file and keeps the processing controls 
 After clicking Process Lecture, the application enters inference mode and begins backend processing (STT, summarization, translation, and retrieval preparation).
 
 ![Processing State](screenshots/03-processing.png)
+
+## How It Works
+
+1. User uploads lecture audio.
+2. Whisper transcribes speech to text.
+3. BART summarizes transcript chunks.
+4. Summary is translated to selected target language.
+5. Transcript is chunked, embedded, and indexed in FAISS.
+6. Q&A retrieves top chunks and generates an answer using FLAN-T5.
 
 ## Notes
 
