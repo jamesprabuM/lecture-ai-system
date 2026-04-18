@@ -142,6 +142,28 @@ Success response example:
 5. Transcript is chunked, embedded, and indexed in FAISS.
 6. Q&A retrieves top chunks and generates an answer using FLAN-T5.
 
+## Screenshots
+
+The following screenshots show the live UI flow from upload to inference trigger.
+
+### 1. Home Screen
+
+The landing interface presents a research-focused dashboard where users can select an audio file, choose a target language, and run the complete AI pipeline in one click.
+
+![Home Screen](screenshots/01-home.png)
+
+### 2. Audio File Selected
+
+This state confirms the selected lecture file and keeps the processing controls visible, so users can validate input before starting transcription and summarization.
+
+![Audio File Selected](screenshots/02-file-selected.png)
+
+### 3. Processing State
+
+After clicking Process Lecture, the application enters inference mode and begins backend processing (STT, summarization, translation, and retrieval preparation).
+
+![Processing State](screenshots/03-processing.png)
+
 ## Notes
 
 - First run may take longer because models are downloaded.
