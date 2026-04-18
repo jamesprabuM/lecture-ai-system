@@ -52,6 +52,18 @@ async function wait(ms) {
     fullPage: true,
   });
 
+  try {
+    const summaryHeading = page.getByRole('heading', { name: 'Summary' });
+    await summaryHeading.scrollIntoViewIfNeeded({ timeout: 5000 });
+    await wait(600);
+    await page.screenshot({
+      path: path.join(outputDir, '05-summary-output.png'),
+      fullPage: true,
+    });
+  } catch {
+    // Some runs may not produce Summary content in time; keep capture flow resilient.
+  }
+
   await browser.close();
   console.log('Screenshots captured in:', outputDir);
 })().catch((error) => {

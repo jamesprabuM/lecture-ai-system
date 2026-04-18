@@ -135,11 +135,11 @@ After clicking Process Lecture, the application enters inference mode and begins
 
 ![Processing State](screenshots/03-processing.png)
 
-### 4. Sample Output (Transcript and Summary)
+### 4. Output Preview
 
-This capture shows the generated lecture transcript and summary cards after successful processing, representing the primary output users consume.
+This screen shows processed lecture content rendered in the result cards, including generated transcript and downstream output panels.
 
-![Sample Output](screenshots/04-sample-output.png)
+![Output Preview](screenshots/04-sample-output.png)
 
 ### `POST /ask`
 
